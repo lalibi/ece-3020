@@ -1,0 +1,10 @@
+{
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "*.pzh.cpp": "${capture}.cpp",
+        "*.cpp": "${capture}.exe"
+    },
+    "files.associations": {
+        "pzhelp": "cpp"
+    }
+}
