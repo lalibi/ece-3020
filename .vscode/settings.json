@@ -1,18 +1,24 @@
 {
-    "explorer.fileNesting.enabled": true,
-    "explorer.fileNesting.patterns": {
-        "*.pzh.cpp": "${capture}.cpp",
-        "*.cpp": "${capture}.exe"
-    },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.pzh.cpp": "${capture}.cpp",
+    "*.cpp": "${capture}*.in, ${capture}*.out, ${capture}.exe, ${capture}"
+  },
 
-    "editor.fontLigatures": false,
+  "editor.fontLigatures": false,
 
-    "files.associations": {
-        "pzhelp": "cpp"
-    },
+  "[cpp]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
 
-    "[cpp]": {
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "ms-vscode.cpptools"
-    }
+  "[json][jsonc]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+  "C_Cpp.codeAnalysis.clangTidy.checks.disabled": [
+    "clang-analyzer-security.insecureAPI.strcpy"
+  ]
 }
