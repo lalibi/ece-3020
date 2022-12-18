@@ -2,4 +2,5 @@
 *.pdf
 *.url
 
-_resources
+_resources/
+.history/
